@@ -1,3 +1,4 @@
+/* General styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -33,15 +34,15 @@ footer {
   margin-top: auto;
   text-align: center;
 }
-/* Responsive Design */
+
+/* Mobile responsiveness */
 @media only screen and (max-width: 600px) {
   .container {
-    width: 90%;
+    max-width: 100%;
     padding: 10px;
   }
+
   .content {
     flex-direction: column;
   }
-
 }
-

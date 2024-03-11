@@ -15,6 +15,21 @@
       <p><strong>When to Use:</strong> Widely used in hidden layers of deep neural networks for its simplicity and effectiveness.</p>
       <p>Imagine you have a box, and you want to decide whether to keep what's inside or throw it away. If what's inside is already good (positive), you just keep it as it is. But if it's not good (negative), you just throw it away and keep nothing.</p>
       <p>That's what Rectified Linear Unit (ReLU) does in a neural network. It's like this box: if the input it receives is positive, it passes it through without changing anything. But if the input is negative, it simply sets it to zero, meaning it throws it away.</p>
+      <p><strong>Now, why do we use it?</strong></p>
+      <ul>
+        <li><strong>Simplicity:</strong> ReLU is simple and easy to understand. It doesn't involve complicated math or operations.</li>
+        <li><strong>Faster Learning:</strong> By throwing away negative values, ReLU makes the learning process faster because it doesn't waste time trying to learn from inputs that aren't helpful.</li>
+        <li><strong>Effectiveness:</strong> Despite its simplicity, ReLU works really well in many situations. It helps neural networks learn complex patterns efficiently, especially in hidden layers where a lot of processing is happening.</li>
+      </ul>
+      <p>So, ReLU is like a smart filter that helps neural networks focus on the important stuff and learn faster. That's why it's widely used in deep learning.</p>
+      <h2>Using ReLU in Deep Learning:</h2>
+      <p>In deep learning, ReLU is used as an activation function, which means it's applied to the output of each neuron in a neural network. When we talk about using ReLU in deep learning, we're referring to applying this function to the outputs of neurons.</p>
+      <h2>Implementation in Code:</h2>
+      <p>In Python, implementing ReLU is straightforward. Here's how you might do it:</p>
+      <pre><code>def relu(x):
+    return max(0, x)</code></pre>
+      <p>This function takes a number x as input and returns x if it's positive, otherwise, it returns 0.</p>
+      <p>In the context of a neural network, you'd apply this function to the output of each neuron in a layer. For example, if you have a set of inputs represented by inputs, and weights represented by weights, and a bias represented by bias, you'd compute the output of a neuron like this:</p>
     </div>
   </div>
 </body>

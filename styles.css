@@ -2,31 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.background-image {
-  background-image: url('relu3.jpg');
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  position: relative;
+  background-color: #f0f0f0; /* Set background color */
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background */
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.container img {
-  max-width: 100%; /* Ensure the image doesn't exceed the container's width */
-  height: auto; /* Maintain aspect ratio */
 }
 
 h1 {
@@ -34,14 +16,40 @@ h1 {
 }
 
 p {
-  color: white;
+  color: #333; /* Change text color to dark gray */
   line-height: 1.6;
 }
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.text {
+  flex: 1;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Responsive Design */
 @media only screen and (max-width: 600px) {
   .container {
     width: 90%;
     padding: 10px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .image {
+    text-align: center;
   }
 }
 
